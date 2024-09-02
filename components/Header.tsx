@@ -5,6 +5,7 @@ import GithubIcon from './icons/GithubIcon'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import LinkedInIcon from './icons/LinkedInIcon'
+import GmailIcon from './icons/GmailIcon'
 
 export default function Header() {
   return (
@@ -16,8 +17,11 @@ export default function Header() {
                     <Link href="https://github.com/KD-Web-Design" target='_blank' className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
                         <GithubIcon size={24} className='text-foreground' />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/kd-web-design-64b496315/" target='_blank' className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
+                    <Link href="https://www.linkedin.com/in/kd-web-design-64b496315/" className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
                         <LinkedInIcon size={24} className='text-foreground' />
+                    </Link>
+                    <Link href="mailto:contact.kd.webdesign@gmail.com" target='_blank' className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
+                        <GmailIcon size={24} className='text-foreground' />
                     </Link>
                 </ul>
             </div>
