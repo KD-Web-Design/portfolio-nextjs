@@ -1,17 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import {ComponentPropsWithoutRef} from 'react'
 import { Section } from './Section'
 import PP from './PP'
+import { cn } from '@/lib/utils'
+import ReactIcon from './icons/ReactIcon'
+import TailwindIcon from './icons/TailwindIcon'
+import NextJSIcon from './icons/NextJSIcon'
 
+
+const Highlights = ({className, ...props}: ComponentPropsWithoutRef<"span">) => {
+  return <span className={cn("bg-accent/80 hover:bg-accent/50 transition-colors border-accent p-1 font-bold rounded-sm m-1 py-0.5",className)} {...props}/>
+}
 export default function Hero() {
   return (
-    <Section className='flex max-lg:flex-col items-start'>
-        <div className='flex-[2]'>
-            <h2>Salut, moi c'est <span className='bg-gradient-to-r from-teal-400 to-yellow-200 text-transparent bg-clip-text font-bold'>Killiam</span></h2>
-            <h3>Développeur frontend passionné, j'allie design intuitif et technologies modernes pour créer des interfaces web réactives et esthétiques.</h3>
-            <div className='flex-1'>
-                <PP className='w-1/2 h-auto'/>
-            </div>
+    <Section className='flex max-md:flex-col items-start gap-8'>
+        <div className='flex-[2] flex flex-col gap-2'>
+            <h2 className='font-caption font-bold text-4xl text-primary'>Salut, moi c'est <span className='bg-gradient-to-r from-teal-400 to-yellow-200 text-transparent bg-clip-text font-bold'>Killiam</span>👋</h2>
+            <h3 className='text-3xl font-caption'>Développeur Freelance</h3>
+            <p className='font-caption text-lg'>Développeur frontend passionné, j'allie design intuitif et technologies modernes pour créer des interfaces web réactives et esthétiques. J'utilise notamment 
+              <Highlights>
+                <ReactIcon size={16} className='inline mr-1'/>React
+              </Highlights>, 
+              <Highlights>
+                <NextJSIcon size={16} className='inline mr-1' />
+                Next.JS
+              </Highlights> ainsi que
+              <Highlights>
+                <TailwindIcon size={16} className='inline mr-1' />
+                TailWindCSS
+              </Highlights>.</p>
+        </div>
+        <div className='flex-1 mx-auto'>
+            <PP className='w-full h-auto max-w-sm max-md:w-56'/>
         </div>
     </Section>
   )
