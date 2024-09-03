@@ -9,7 +9,7 @@ import GmailIcon from './icons/GmailIcon'
 
 export default function Header() {
   return (
-    <header className='sticky top-0 py-4'>
+    <header className='py-4'>
         <Section className='flex'>
             <h1 className='text-lg font-bold text-primary'>kd-web-design.dev</h1>
             <div className='flex-1'>
