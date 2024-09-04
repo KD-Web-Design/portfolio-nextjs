@@ -1,16 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import {ComponentPropsWithoutRef} from 'react'
+import { Highlights } from './Highlights'
 import { Section } from './Section'
 import PP from './PP'
-import { cn } from '@/lib/utils'
 import ReactIcon from './icons/ReactIcon'
 import TailwindIcon from './icons/TailwindIcon'
 import NextJSIcon from './icons/NextJSIcon'
 
 
-const Highlights = ({className, ...props}: ComponentPropsWithoutRef<"span">) => {
-  return <span className={cn("bg-accent/80 hover:bg-accent/50 transition-colors border-accent p-1 font-bold rounded-sm m-1 py-0.5",className)} {...props}/>
-}
+
 export default function Hero() {
   return (
     <Section className='flex max-md:flex-col items-start gap-8'>

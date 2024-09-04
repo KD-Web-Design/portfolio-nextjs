@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en">
       <body className={cn(GeistSans.variable, AnekTelugu.variable, "font-sans h-full bg-gradient-to-br from-purple-950 to-fuchsia-950 text-foreground")}>{children}</body>
     </html>
   );

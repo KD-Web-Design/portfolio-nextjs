@@ -5,13 +5,12 @@ import { Card } from './ui/card'
 import { ArrowUpRight, CarFront, LucideIcon, ShoppingCart, Store } from 'lucide-react'
 import Link from 'next/link'
 import myImage from '../public/pp-circle.png';
-import GmailIcon from './icons/GmailIcon'
 
 export default function Status() {
   return (
     // CARDS PROJETS PERSOS 
     <Section className='flex max-md:flex-col items-start gap-4'>
-        <Card className='flex-1 p-4 flex flex-col gap-2 w-full'>
+        <Card className='flex-1 p-4 flex flex-col gap-4 w-full'>
             <h1 className="scroll-m-20 text-md font-extrabold tracking-tight lg:text-lg">
                 Projets persos
             </h1>
@@ -28,7 +27,7 @@ export default function Status() {
             </div>
         </Card>
         <div className="flex-1 h-full gap-4 flex w-full flex-col">
-            <Card className='p-4 flex-1'>
+            <Card className='p-4 flex-1 flex flex-col gap-4'>
                 <h1 className="scroll-m-20 text-md font-extrabold tracking-tight lg:text-lg">
                     Certificats
                 </h1>
@@ -44,12 +43,16 @@ export default function Status() {
                 ))}
             </div>
             </Card>
-            <Card className='p-4 flex-1 '>
+            <Card className='p-4 flex-1 flex flex-col gap-4 '>
                 <h1 className="scroll-m-20 text-md font-extrabold tracking-tight lg:text-lg">
                     Contactez-moi
                 </h1>
-                <ContactCard name='KD Web Design' description='contact.kd.webdesign@gmail.com' mediumImage='https://static.vecteezy.com/ti/vecteur-libre/p3/13948544-logo-gmail-sur-fond-blanc-transparent-gratuit-vectoriel.jpg' />
-                <ContactCard name='KD Web Design' description='KD-Web-Design' mediumImage='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png' />
+                <Link href="mailto:contact.kd.webdesign@gmail.com">
+                    <ContactCard name='KD Web Design' description='contact.kd.webdesign@gmail.com' mediumImage='https://static.vecteezy.com/ti/vecteur-libre/p3/13948544-logo-gmail-sur-fond-blanc-transparent-gratuit-vectoriel.jpg' />
+                </Link>
+                <Link href="https://www.linkedin.com/in/kd-web-design-64b496315/" target='blank'>
+                    <ContactCard name='KD Web Design' description='KD-Web-Design' mediumImage='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png' />
+                </Link>
             </Card>
         </div>
     </Section>
