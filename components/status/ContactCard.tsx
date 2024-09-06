@@ -10,7 +10,7 @@ export const ContactCard = (props: {
     return (
         <Card className='p-3 bg-accent/10 flex items-center gap-4 hover:bg-accent/30 transition-colors group cursor-pointer'>
             <div className='relative'>
-                <Image src="/pp-circle.png" alt={props.name} width={40} height={40} />
+                <Image src="/images/pp-circle.png" alt={props.name} width={40} height={40} />
                 <Image src={props.mediumImage} alt={props.name} className='absolute -bottom-1 -right-1 rounded-full object-contain' width={16} height={16} />
             </div>
             <div className='mr-auto'>

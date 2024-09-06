@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import myImage from '../public/pp-circle.png';
+import myImage from '../public/images/pp-circle.png';
 import { PropsWithChildren } from 'react';
 const PP = (props: PropsWithChildren <{className?:string}>) => {
   return (
