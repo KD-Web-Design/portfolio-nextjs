@@ -26,7 +26,7 @@ export default function Stack() {
             <div className='flex flex-col gap-2 flex-1 w-full'>
                 <TailwindIcon size={42} />
                 <h3 className="mb-2 text-xl font-semibold tracking-tight">TailwindCSS</h3>
-                <p className="text-sm text-muted-foreground">Pour être très flexible sur votre design tout en étant responsive.</p>
+                <p className="text-sm text-muted-foreground">Pour être flexible sur votre design tout en étant responsive.</p>
             </div>
             <div className='flex flex-col gap-2 flex-1 w-full'>
                 <TypescriptIcon size={42}  />
