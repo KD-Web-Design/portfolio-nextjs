@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 type SpotlightProps = {
@@ -7,10 +9,15 @@ type SpotlightProps = {
 };
 
 export const Spotlight = ({ className, fill }: SpotlightProps) => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <svg
       className={cn(
-        "animate-spotlight pointer-events-none absolute z-[1]  h-[169%] w-[100%] lg:w-[84%] opacity-0 overflow-hidden",
+        "animate-spotlight pointer-events-none absolute z-[1]  h-[100%] max-w-full lg:w-[84%] opacity-0 overflow-hidden",
         className
       )}
       xmlns="http://www.w3.org/2000/svg"

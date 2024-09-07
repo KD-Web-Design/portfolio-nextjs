@@ -36,7 +36,7 @@ export default function Stack() {
             <div className='flex flex-col gap-2 flex-1 w-full'>
                 <OpenAIIcon size={42} className='animate-spin' style={{animationDuration: "8s"}} />
                 <h3 className="mb-2 text-xl font-semibold tracking-tight">OpenAI</h3>
-                <p className="text-sm text-muted-foreground">L'intelligence artificielle, pour gagner en efficacité.</p>
+                <p className="text-sm text-muted-foreground">L&apos;intelligence artificielle, pour gagner en efficacité.</p>
             </div>
         </div>
     </Section>
