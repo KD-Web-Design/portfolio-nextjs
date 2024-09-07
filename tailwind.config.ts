@@ -76,12 +76,24 @@ const config = {
           '25%': { transform: 'rotate(10deg)' },
           '50%': { transform: 'rotate(-10deg)' },
           '75%': { transform: 'rotate(10deg)' },
+        },
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        wave: 'wave 2s ease-in-out infinite'
+        wave: 'wave 2s ease-in-out infinite',
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
     },
   },
@@ -89,5 +101,3 @@ const config = {
 } satisfies Config
 
 export default config
-
-

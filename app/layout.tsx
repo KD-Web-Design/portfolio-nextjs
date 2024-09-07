@@ -3,6 +3,7 @@ import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 const AnekTelugu = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
@@ -21,7 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(GeistSans.variable, AnekTelugu.variable, "font-sans h-full bg-gradient-to-br from-purple-950 to-fuchsia-950 text-foreground ")}>{children}</body>
+      <body className={cn(GeistSans.variable, AnekTelugu.variable, " w-full font-sans h-full bg-gradient-to-br from-purple-950 to-fuchsia-950 text-foreground ")}><Spotlight className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white" />{children}</body>
     </html>
   );
 }
