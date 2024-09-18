@@ -24,7 +24,7 @@ export default function Hero() {
               </Highlights> ainsi que
               <Highlights>
                 <TailwindIcon size={16} className='inline mr-1' />
-                TailWindCSS
+                TailwindCSS
               </Highlights>.</p>
         </div>
         <div className='flex-1 mx-auto'>

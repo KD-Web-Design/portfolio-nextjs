@@ -8,6 +8,12 @@ export const CertificatesSection = () => {
             title: "Responsive Web Design",
             date: "08/2024",
             url: "https://www.freecodecamp.org/certification/KD-Web-Design/responsive-web-design"
+        },
+        {
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpCpzAlmrfzPB_q16Dbvq0IihxEcGEKTZFLA&s",
+            title: "Front End Development Librairies",
+            date: "09/2024",
+            url: "https://www.freecodecamp.org/certification/KD-Web-Design/front-end-development-libraries"
         }
     ];
 
