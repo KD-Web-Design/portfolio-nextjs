@@ -1,6 +1,6 @@
 import { SideProject, SideProjectProps } from "./SideProject";
 import { Card } from "../ui/card";
-import { Mountain, ShoppingCart, Store } from "lucide-react";
+import { Car, Mountain, ShoppingCart } from "lucide-react";
 
 export const ProjectsSection = () => {
   const SIDE_PROJECTS: SideProjectProps[] = [
@@ -12,11 +12,11 @@ export const ProjectsSection = () => {
       url: "https://mountains-next-js-git-preview-kd-web-designs-projects.vercel.app/",
     },
     {
-      Logo: Store,
-      title: "La Petite Butineuse",
+      Logo: Car,
+      title: "La Centrale",
       description:
-        "Projet d'un site de présentation de miels pour un commerçant.",
-      url: "https://la-petite-butineuse.onrender.com",
+        "Réplique de la landing page du fameux site vente de véhicules.",
+      url: "https://lacentrale-nextjs.onrender.com",
     },
     {
       Logo: ShoppingCart,
