@@ -10,7 +10,7 @@ export type SideProjectProps = {
 
 export const SideProject = (props: SideProjectProps) => {
   const content = (
-    <div className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors rounded p-1 cursor-pointer">
+    <div className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors rounded p-1 cursor-pointer w-full">
       <span className="bg-accent text-accent-foreground p-3 rounded-sm">
         <props.Logo />
       </span>

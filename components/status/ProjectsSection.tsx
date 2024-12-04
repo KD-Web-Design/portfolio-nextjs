@@ -1,6 +1,6 @@
 import { SideProject, SideProjectProps } from "./SideProject";
 import { Card } from "../ui/card";
-import { Car, Mountain, ShoppingCart } from "lucide-react";
+import { Car, Mountain, ForkKnifeCrossed } from "lucide-react";
 
 export const ProjectsSection = () => {
   const SIDE_PROJECTS: SideProjectProps[] = [
@@ -19,9 +19,10 @@ export const ProjectsSection = () => {
       url: "https://lacentrale-nextjs.onrender.com",
     },
     {
-      Logo: ShoppingCart,
-      title: "Leboncoin",
-      description: "Réplique de la landing page du site Leboncoin.",
+      Logo: ForkKnifeCrossed,
+      title: "Burger Xpress",
+      description: "Application de commande de burgers en ligne.",
+      url: "https://burger-xpress.onrender.com",
     },
   ];
 
