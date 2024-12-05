@@ -16,13 +16,13 @@ export const ProjectsSection = () => {
       title: "La Centrale",
       description:
         "Réplique de la landing page du fameux site vente de véhicules.",
-      url: "https://lacentrale-nextjs.onrender.com",
+      url: "https://lacentrale-replica.netlify.app",
     },
     {
       Logo: ForkKnifeCrossed,
       title: "Burger Xpress",
       description: "Application de commande de burgers en ligne.",
-      url: "https://burger-xpress.onrender.com",
+      url: "https://burger-xpress.netlify.app",
     },
   ];
 
