@@ -16,7 +16,7 @@ export const ContactSection = () => {
         />
       </Link>
       <Link
-        href="https://www.linkedin.com/in/kd-web-design-64b496315/"
+        href="https://www.linkedin.com/in/killiam-d-64b496315/"
         target="_blank"
       >
         <ContactCard
