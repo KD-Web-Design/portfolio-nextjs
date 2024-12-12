@@ -1,3 +1,6 @@
+KD Web Design - Portfolio 🚀
+Bienvenue sur mon portfolio, une vitrine de mes compétences en développement web, de mes projets récents, et de mon approche créative pour transformer vos idées en solutions digitales modernes.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
