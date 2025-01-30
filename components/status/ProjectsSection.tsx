@@ -1,28 +1,32 @@
 import { SideProject, SideProjectProps } from "./SideProject";
 import { Card } from "../ui/card";
-import { Car, Mountain, ForkKnifeCrossed } from "lucide-react";
+import { Car, Mountain, ForkKnifeCrossed, Gamepad2 } from "lucide-react";
 
 export const ProjectsSection = () => {
   const SIDE_PROJECTS: SideProjectProps[] = [
     {
       Logo: Mountain,
       title: "summitSeekers",
-      description:
-        "Concept d'application sur les plus belles montagnes du monde.",
+      description: "Concept d'application nature & montagnes",
       url: "https://mountains-next-js-git-preview-kd-web-designs-projects.vercel.app/",
     },
     {
       Logo: Car,
       title: "La Centrale",
-      description:
-        "Réplique de la landing page du fameux site vente de véhicules.",
+      description: "Réplique de la landing page",
       url: "https://lacentrale-replica.netlify.app",
     },
     {
       Logo: ForkKnifeCrossed,
       title: "Burger Xpress",
-      description: "Application de commande de burgers en ligne.",
+      description: "Application de commande de burgers en ligne",
       url: "https://burger-xpress.netlify.app",
+    },
+    {
+      Logo: Gamepad2,
+      title: "Throttle & Pixels",
+      description: "Blog CRUD Simracing",
+      url: "https://throttle-and-pixels.netlify.app/",
     },
   ];
 
